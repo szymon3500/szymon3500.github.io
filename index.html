@@ -1,33 +1,50 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My test page</title>
+    <!-- Nowoczesna czcionka z Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
     <script async src="scripts/main.js"></script>
   </head>
   <body>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>poniżej znajduje się zdjęcie mojego samochodu.</p>
-    <img src="images/samochod.jpg" alt="samochód" />
-    <p>At Mozilla, we're a global <a href="https://www.mozilla.org/">community</a> of</p>
-<ol>
-  <li>technologists</li>
-  <li>thinkers</li>
-  <li>builders</li>
-</ol>
+    <div class="container">
+      <header>
+        <h1>Witaj na mojej stronie!</h1>
+        <p class="subtitle">Poniżej znajduje się zdjęcie mojego samochodu.</p>
+      </header>
+      
+      <main>
+        <div class="image-wrapper">
+          <img src="images/samochod.jpg" alt="samochód" />
+        </div>
 
-<p>working together…</p>
+        <div class="content-section">
+          <p>At Mozilla, we're a global <a href="https://www.mozilla.org/">community</a> of</p>
+          <ol>
+            <li>technologists</li>
+            <li>thinkers</li>
+            <li>builders</li>
+          </ol>
 
-<p>Instructions for life:</p>
+          <p>working together…</p>
 
-<ul>
-  <li>Eat</li>
-  <li>Sleep</li>
-  <li>Repeat</li>
-</ul>
+          <div class="instructions">
+            <h3>Instructions for life:</h3>
+            <ul>
+              <li>Eat</li>
+              <li>Sleep</li>
+              <li>Repeat</li>
+            </ul>
+          </div>
+        </div>
 
-<button>Change user</button>
+        <button>Change user</button>
+      </main>
+    </div>
   </body>
 </html>
